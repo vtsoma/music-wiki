@@ -1,48 +1,103 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 header {
-    width: 100vw;
-    height: 85px;
+  width: 100vw;
+  height: 85px;
 
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.548);
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.548);
 }
 
-header:after{
-    content: '';
-      display: inline-block;
-      width: 100%;
-  }
+header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
 
 header * {
-    display: inline-block;
-    padding: 10px;
-    user-select: none;
+  display: inline-block;
+  padding: 10px;
+  user-select: none;
 }
 
 .logo {
-    text-align: center;
-    vertical-align: middle;
-    margin-left: 40px;
-    margin-right: 40px;
+  text-align: center;
+  vertical-align: middle;
+
+  margin-left: 50px;
+  transition: all .1s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(-25deg);
 }
 
 nav {
-    width: fit-content;
-    vertical-align: middle;
-
-
+  width: fit-content;
+  vertical-align: middle;
 }
 
 nav ul {
-    width: fit-content;
-    display: inline-block;
+  width: fit-content;
+  display: inline-block;
+
+  transition: all .2s ease-in-out;
+}
+
+nav ul:hover {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: green;
+  border-radius: 20px;
+
+  cursor: pointer;
 }
 
 .user-icon img {
-    width: 30px;
-    vertical-align: middle;
+  width: 40px;
+  border-radius: 50px;
+  vertical-align: middle;
+
+  margin-right: 50px;
+}
+
+aside {
+  border: 1px dotted red;
+
+  height: 100vh;
+  width: 20vw;
+}
+
+aside h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.friend {
+  padding: 5px;
+}
+
+.friend p {
+  margin-left: 40px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.friend img {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.friend-header * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.friend-header h3 {
+  margin-left: 5px;
 }
