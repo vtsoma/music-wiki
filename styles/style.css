@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100vw;
+    height: 85px;
+
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+header:after{
+    content: '';
+      display: inline-block;
+      width: 100%;
+  }
+
+header * {
+    display: inline-block;
+    padding: 10px;
+    user-select: none;
+}
+
+.logo {
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav {
+    width: fit-content;
+    vertical-align: middle;
+
+
+}
+
+nav ul {
+    width: fit-content;
+    display: inline-block;
+}
+
+.user-icon img {
+    width: 30px;
+    vertical-align: middle;
+}
